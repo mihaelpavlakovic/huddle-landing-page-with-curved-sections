@@ -101,6 +101,7 @@ p {
 }
 
 .hero .hero-img {
+  width: 100%;
   margin-top: 5rem;
 }
 
@@ -113,7 +114,7 @@ p {
   padding-bottom: 10rem;
 }
 
-.stats-container {
+.stats .stats-container {
   display: flex;
   justify-content: space-around;
   padding: 6rem 0;
@@ -199,10 +200,6 @@ p {
   padding: 4rem 0;
 }
 
-.footer .footer-curves-mobile {
-  display: none;
-}
-
 .footer .footer-content {
   display: flex;
   justify-content: space-between;
@@ -252,4 +249,132 @@ p {
   align-items: center;
   gap: 1.5rem;
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .btn-primary {
+    padding: 0.7rem 2rem;
+  }
+
+  .btn-secondary {
+    padding: 0.3rem 1.5rem;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .navbar .logo {
+    width: 35%;
+  }
+
+  .hero {
+    margin-top: 5rem;
+  }
+
+  .hero .heading {
+    font-size: 1.5em;
+  }
+
+  .hero .subheading {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .stats {
+    background: url("./images/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 2rem;
+  }
+
+  .stats .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 6rem 0;
+  }
+
+  .stats .lead {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .conversations {
+    background: url("./images/bg-section-bottom-mobile-1.svg"),
+      url("./images/bg-section-top-mobile-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top, bottom;
+    padding: 5rem 0;
+  }
+
+  .users {
+    background: url("./images/bg-section-top-mobile-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: var(--very-pale-blue);
+  }
+
+  .card-content {
+    flex-direction: column;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .card-content .left-section {
+    order: 2;
+  }
+
+  .card-content .card-img {
+    order: 1;
+    width: 60%;
+    margin-bottom: 3rem;
+  }
+
+  .heading-2 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+
+  .subheading-2 {
+    width: 36ch;
+    margin: 0 auto;
+  }
+
+  .community {
+    padding: 8rem 0;
+    background: url("./images/bg-section-bottom-mobile-2.svg"),
+      url("./images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top, bottom;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+  }
+
+  .footer .footer-content .footer-left {
+    order: 2;
+  }
+
+  .footer .footer-content .footer-right {
+    order: 1;
+  }
+
+  .footer .footer-right .input-section {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer .socials {
+    margin-top: 0;
+  }
 }
